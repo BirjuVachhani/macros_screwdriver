@@ -2,7 +2,8 @@
 
 A collection of helpful macros to reduce boilerplate code and make development easier.
 
-> Note: This package is in early development and may not be stable yet. Use it at your own risk.
+> Note: This package is in early development and may not be stable yet. Use it at your own risk. More macros will
+> be added.
 >
 > Requirements: Dart 3.6.0-261.0.dev
 
@@ -19,7 +20,7 @@ Then, run `pub get`.
 
 ## Macros
 
-- [@PublicGetter()](lib/src/public_getter.dart): Generates a public getter for a private field.
+- [@PublicGetter()](#publicgetter): Generates a public getter for a private field.
 
 ## How to Use?
 
