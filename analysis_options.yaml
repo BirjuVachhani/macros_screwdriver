@@ -1,0 +1,11 @@
+include: package:lints/recommended.yaml
+
+analyzer:
+  enable-experiment:
+    - macros
+
+linter:
+  rules:
+    public_member_api_docs: true
+    prefer_single_quotes: true
+    use_super_parameters: true
