@@ -18,13 +18,17 @@ dependencies:
 
 Then, run `pub get`.
 
-## Macros
+## List of all Macros
 
 - [@PublicGetter()](#publicgetter): Generates a public getter for a private field.
 
-## How to Use?
+
+
+## Macros
 
 ### @PublicGetter()
+
+Generates a public getter for a private field.
 
 ```dart
 import 'package:macros_screwdriver/macros_screwdriver.dart';
