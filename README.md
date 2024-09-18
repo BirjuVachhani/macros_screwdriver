@@ -3,7 +3,7 @@
 A collection of helpful macros to reduce boilerplate code and make development easier.
 
 > Note: This package is in early development and may not be stable yet. Use it at your own risk.
-> 
+>
 > Requirements: Dart 3.6.0-261.0.dev
 
 ## Getting started
@@ -19,7 +19,29 @@ Then, run `pub get`.
 
 ## Macros
 
-- @PublicGetter(): Generates a public getter for a private field.
+- [@PublicGetter()](lib/src/public_getter.dart): Generates a public getter for a private field.
+
+## How to Use?
+
+### @PublicGetter()
+
+```dart
+import 'package:macros_screwdriver/macros_screwdriver.dart';
+
+class User {
+  @PublicGetter()
+  String _name;
+
+  User(this._name);
+}
+
+void main() {
+  final user = User('John');
+  print(user.name); // John
+  user.name = 'Doe'; // Compile-time error: user.name is a getter(read-only).
+}
+
+```
 
 ## Found this package useful?
 
@@ -32,7 +54,6 @@ Want to support my work?
 Or You can
 
 <a href="https://www.buymeacoffee.com/birjuvachhani" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-blue.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
-
 
 ## License
 
